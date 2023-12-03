@@ -1,0 +1,76 @@
+<!--
+Name: Ryan Politis
+Email: Ryan_Politis@student.uml.edu
+File: index.html
+Date: 11/27/23
+GUI Assignment: Implement a multiplication table using forms and javascript
+What the file does: HTML file that displays the structure of the page. Takes inputs and stores them, contains the divs for form, tables, and tabs.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/jquery-ui.css"/>
+  </head>
+  <body>
+    <!-- Wrapper div that surrounds all content -->
+    <div id="wrapper">
+      <!-- Title div for title at top of webpage -->
+      <div id="title">
+        <h1>Multiplication Table</h1>
+      </div>
+      <!-- Main form that keeps track of all inputs and buttons to add, delete, or destroy tabs -->
+      <!-- Added sliders to control input -->
+      <form id="input_form">
+        <p>
+          <label for="min_x">Minimum X-value (-50 to 50):</label>
+          <input type="text" id="min_x" name="min_x">
+          <div id="slider_minx"></div>
+        </p>
+        <p>
+          <label for="max_x">Maximum X-value (-50 to 50):</label>
+          <input type="text" id="max_x" name="max_x">
+          <div id="slider_maxx"></div>
+        </p>
+        <p>
+          <label for="min_y">Minimum Y-value (-50 to 50):</label>
+          <input type="text" id="min_y" name="min_y">
+          <div id="slider_miny"></div>
+        </p>
+        <p>
+          <label for="max_y">Maximum Y-value (-50 to 50):</label>
+          <input type="text" id="max_y" name="max_y">
+          <div id="slider_maxy"></div>
+        </p>
+          <p>
+            <input id="adder" type="button" value="Add tab">
+          </p>
+          <p>
+            <input id="deleter" type="button" value="Delete Active Tab">
+          </p>
+          <p>
+            <input id="destroyer" type="button" value="Delete All Tabs">
+          </p>
+      </form>
+      <!-- Div for bottom of inputs and errors -->
+      <div id="bottom">
+        <h1></h1>
+      </div>
+      <!-- Div that surrounds tabs that store dynamic multiplication tables -->
+      <div id="tabs">
+        <ul id = tabs_list>
+          <li class="tab1"><a id="tab1name" href="#tbl1">Home</a></li>
+        </ul>
+        <div id="tbl1">
+          <table id="multi_table1"></table>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

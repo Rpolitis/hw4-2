@@ -1,0 +1,131 @@
+/*
+Name: Ryan Politis
+Email: Ryan_Politis@student.uml.edu
+File: style.css
+Date: 11/27/23
+GUI Assignment: Implement a multiplication table using forms and javascript
+What the file does: External CSS file that makes the page look nice and readable
+*/
+
+/* Sets the background of the page to a dark color (I like dark mode) */
+body {
+    background-color: rgb(43, 42, 42);
+}
+
+/* Sets the borders for the title and bottom of form as well as sets off-white color for header and labels */
+#title, #bottom {
+    display: block;
+    border-bottom: rgb(61, 205, 133) solid 5px;
+}
+h1, label {
+    display: block;
+    color: rgb(245, 245, 245);
+}
+
+/* Aligns everthing in the wrapper to the center */
+#wrapper {
+    text-align: center;
+}
+
+/* Change color of input highlight and put some padding inside input boxes */
+input[type=text]:focus {
+    outline: none;
+    border: rgb(61, 205, 133) 2px inset;
+}
+input {
+    padding: 5px;
+}
+
+/* Align label and submit button */
+label {
+    margin-top: 20px;
+}
+
+/* Make errors red and align them */
+#input_form label.error {
+    display: block;
+    color: rgb(220, 66, 66);
+    margin-left: 10px
+}
+
+/* Rules to change colors of table, add padding, add borders, and align table correctly */
+td {
+    color: rgb(245, 245, 245);
+    padding: 10px;
+    border: rgb(203, 203, 203) 1px solid;
+    border-collapse: collapse;
+    font-size: larger;
+}
+td:first-child {
+    background-color: rgb(26, 84, 55);
+}
+tr:first-child {
+    background-color: rgb(26, 84, 55);
+}
+tr:nth-child(even) {
+    background-color: rgb(43, 42, 42);
+}
+table {
+    max-width: 100%;
+    margin: 10px auto 10px auto;
+    border: 0px solid;
+    border-collapse: collapse;
+}
+
+/* Makes table scrollable when table is too big */
+#tbl {
+    overflow-x: auto;
+}
+
+/* Change size, position, and color of sliders */
+.ui-slider {
+    width: 50%;
+    margin: 10px auto 10px auto;
+}
+#slider_minx .ui-slider-handle {
+    background-color: rgb(61, 205, 133);
+    border: rgb(61, 205, 133) 2px solid;
+}
+#slider_minx .ui-slider-handle:focus {
+    outline: none;
+    border: rgb(61, 205, 133) 2px inset;
+}
+#slider_maxx .ui-slider-handle {
+    background-color: rgb(61, 205, 133);
+    border: rgb(61, 205, 133) 2px solid;
+}
+#slider_maxx .ui-slider-handle:focus {
+    outline: none;
+    border: rgb(61, 205, 133) 2px inset;
+}
+#slider_miny .ui-slider-handle {
+    background-color: rgb(61, 205, 133);
+    border: rgb(61, 205, 133) 2px solid;
+}
+#slider_miny .ui-slider-handle:focus {
+    outline: none;
+    border: rgb(61, 205, 133) 2px inset;
+}
+#slider_maxy .ui-slider-handle {
+    background-color: rgb(61, 205, 133);
+    border: rgb(61, 205, 133) 2px solid;
+}
+#slider_maxy .ui-slider-handle:focus {
+    outline: none;
+    border: rgb(61, 205, 133) 2px inset;
+}
+
+/* Change color of tabs */
+#tabs {
+    background: rgb(21, 21, 21);;
+    border: none;
+}
+
+.ui-tabs .ui-tabs-nav {
+    background: rgb(21, 21, 21);
+    border: none;
+}
+
+#tabs .ui-state-active {
+    background: rgb(61, 205, 133);
+}
